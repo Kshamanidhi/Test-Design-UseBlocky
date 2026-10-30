@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UseBlocky Swap</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top">
+    <span class="logo">UseBlocky</span>
+    <span class="net">ETH</span>
+    <button class="conn">Connect Wallet</button>
+  </div>
+
+  <div class="card">
+    <label class="eyebrow">My Token</label>
+    <h2>Swap</h2>
+
+    <div class="row">
+      <label>from</label>
+      <input type="text" value="1.5">
+      <span class="tok">ETH</span>
+    </div>
+<div class="swap-arrow">↓</div>
+    <div class="row r2">
+      <label>to</label>
+      <input type="text" value="">
+      <span class="tok">USDT</span>
+    </div>
+
+    <button class="go">Swap</button>
+
+
+
+
+<!-- <div class="status">
+  Transaction failed: 0x4001
+</div> -->
+
+<!-- status (honest information for the error message if available) -->
+<div class="status" role="alert">
+  <strong>Transaction was rejected</strong>
+  <p>You cancelled the request in your wallet.
+  No swap was submitted.</p>
+  <details>
+    <summary>Technical details</summary>
+    <small>Error code: 0x4001</small>
+  </details>
+</div>
+<button class="option"> Connect Wallet First</button>
+    <p class="small">Network: Ethereum. Slippage 0.5%.</p>
+  </div>
+</body>
+</html>
